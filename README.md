@@ -1,43 +1,42 @@
-# Shop
-
-To run ->
 
 
-clone the entire repo
+## Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-go to server repo
+### Prerequisites
 
-create .env files 
+NPM / Yarn and Node.js installed
 
+### Installing
 
-make environment file with the following keys' values:
+Installing NPM modules on both client,admin and api folders
 
+Execute these commands from the project directory
 
-MONGO_URI = "path to mongodb url"
+```
+cd client && npm install
+```
 
+```
+cd api && npm install
+```
 
-userEmail = "your email"
+```
+cd admin && npm install
+```
 
+### Running the app
 
-userPass = "your password"
+Open a terminal on server directory
 
+```
+npm run start:dev
+```
 
-JWT_SECRET = "your secret here"
+and open another terminal on client directory
+```
+npm run start
+```
 
-
-yarn
-
-
-yarn server
-
-
-go to CRM repo
-
-
-make environment file with the following keys' values:
-REACT_APP_API_URL = http://localhost:5000/api
-REACT_APP_SERVER_ROUTE = http://localhost:5000
-REACT_APP_JWT_SECRET = "your secret here"
-yarn
-yarn start
+Access the web app at http://localhost:3000/
